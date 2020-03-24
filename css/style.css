@@ -1,0 +1,200 @@
+body { 
+    /*by default body and html are assigned to margin or padding to some pixels, to delete this us code below*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"; 
+    grid-template-rows: 10% auto 82px;
+    grid-gap: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100vw;
+    height: 100vh; /*Makes the grid fill the complete viewport height (vh)*/
+}
+
+header {
+    grid-area: header;
+    place-self: stretch;
+    padding: 1% 3% 0% 0%;
+}
+
+nav {
+    /* border: 5px solid red; */
+}
+
+#navlist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#login {
+    border-radius: 50%;
+}
+
+nav ul {
+    padding-top: 0px;
+    /* border: 4px solid blue; */
+    margin: auto;
+}
+
+li {
+    /*border: 1px solid green;*/
+}
+
+a {
+    text-decoration: none;
+    color: #9AA0A6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#figure {
+    margin: 57px 0px 24px 0px;
+}
+
+#form{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border: 4px solid blue; */
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #DFE1E5;
+    box-sizing: border-box;
+    border-radius: 24px;
+    width: 582px;
+    height: 44px;
+}
+
+.input-bar {
+    border: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    height: 34px;
+    margin: auto 10px auto 10px;
+    width: 487px;
+}
+
+textarea:focus, input:focus { /*Used to delete blue outline on searchbar when selecting it*/
+    outline: none;
+}
+
+#google-search {
+    height: 14.58px;
+    width: 14.58px;
+}
+
+#google-microphone {
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+#search-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0px 5px 0px;
+}
+
+.search-button {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #5F6368;
+    cursor: pointer;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    min-width: 54px;
+    margin: 11px 4px;
+}
+
+#language-chooser {
+    /* border: 4px solid blue; */
+}
+
+footer {
+    grid-area: footer;
+    place-self: stretch;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.footer-container {
+    border-top: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+footer .footer-container p {
+    margin: 10px 0px 0px 27px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#footlist {
+    border: 1px solid red;
+    box-sizing: border-box;
+    order: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #5F6368;
+}
+
+#footlist a {
+    color: #5F6368;
+}
+
+#down ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
