@@ -31,7 +31,7 @@ body {
 header {
     grid-area: header;
     place-self: stretch;
-    padding: 1% 1% 0% 0%;
+    padding: 15px 30px 0px 0px;
 }
 
 nav {
@@ -58,13 +58,29 @@ nav ul {
     margin: auto;
 }
 
+nav ul a:hover {
+    opacity: 0.85;
+}
+
+#google-apps {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/google-apps.png);
+    background-size: 15px;
+    opacity: 0.55;
+}
+
+#google-apps:hover {
+    opacity: 0.85;
+}
+
 li {
     /*border: 1px solid green;*/
 }
 
 a {
     text-decoration: none;
-    color: #9AA0A6;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 a:hover {
@@ -80,7 +96,7 @@ main {
 }
 
 #figure {
-    margin: 57px 0px 24px 0px;
+    margin: 110px 0px 24px 0px;
 }
 
 #form{
@@ -101,6 +117,11 @@ main {
     border-radius: 24px;
     width: 582px;
     height: 44px;
+}
+
+#search-bar:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 .input-bar {
@@ -150,7 +171,13 @@ textarea:focus, input:focus { /*Used to delete blue outline on searchbar when se
     margin: 11px 4px;
 }
 
-#language-chooser {
+.search-button:hover {
+    border: 1px solid #C6C6C6;
+}
+
+#language-chooser a{
+    padding: 0 3px;
+    color: #1A0DAB;
     /* border: 4px solid blue; */
 }
 
@@ -170,6 +197,7 @@ footer {
     border-top: 1px solid #E4E4E4;
     box-sizing: border-box;
     height: 41px;
+    font-size: 14px;
 }
 
 footer .footer-container p {
